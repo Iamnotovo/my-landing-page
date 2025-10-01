@@ -1,0 +1,174 @@
+import whyDetTopLeft from "../assets/why/why_det_top_left.png";
+import whyDetTopRight from "../assets/why/why_det_top_right.png";
+import whyDetBottomLeft from "../assets/why/why_det_bottom left.png";
+import whyDetDots from "../assets/why/why_det_dots.png";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
+function WhySection() {
+  const [headerRef, headerVisible] = useScrollAnimation();
+  const [cardsRef, cardsVisible] = useScrollAnimation();
+
+  return (
+        <section id="why" className="relative bg-[#151A36] text-white py-8 lg:py-12 overflow-hidden min-h-screen flex items-center">
+      {/* Container */}
+      <div className="relative mx-auto max-w-5xl px-6 sm:px-8 lg:px-12">
+        
+        {/* Section Header */}
+        <div 
+          ref={headerRef}
+          className={`text-center mb-12 lg:mb-16 transition-all duration-700 ${
+            headerVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          <h2 className="font-semibold text-[28px] sm:text-[36px] lg:text-[42px] leading-[1.2] mb-12">
+            Why AceDiploma?
+          </h2>
+        </div>
+
+        {/* Main Content Grid */}
+        <div 
+          ref={cardsRef}
+          className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center transition-all duration-800 ${
+            cardsVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          
+          {/* Left Side - Feature Cards */}
+          <div className="grid gap-6">
+            
+            {/* Top Row - Past Paper Style Questions */}
+            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
+                    📚
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2 text-white">
+                    Past Paper Style Questions
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Row - AI Assisted Auto-grading */}
+            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
+                    🤖
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2 text-white">
+                    AI Assisted Auto-grading
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Right Side - Feature Cards */}
+          <div className="grid gap-6">
+            
+            {/* Top Row - Examiner Mode */}
+            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
+                    📋
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2 text-white">
+                    Examiner Mode
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Row - Verified by IB Teachers */}
+            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
+                    ✅
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-2 text-white">
+                    Verified by IB Teachers
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Decorative Details Around Grid - NO MAIN PHOTO */}
+        <div className="absolute inset-0 pointer-events-none">
+          
+          {/* Top Left Detail - outside top left card */}
+          <img 
+            src={whyDetTopLeft} 
+            alt="Top left decoration" 
+            className="hidden lg:block absolute top-[35%] left-[-1%] w-[15px] xl:w-[19px] h-auto animate-float z-30"
+            style={{animationDelay: '0s'}}
+          />
+          
+          {/* Top Right Detail - outside top right card */}
+          <img 
+            src={whyDetTopRight} 
+            alt="Top right decoration" 
+            className="hidden lg:block absolute top-[10%] right-[-2%] w-[25px] xl:w-[30px] h-auto animate-float z-30"
+            style={{animationDelay: '0.5s'}}
+          />
+          
+          {/* Bottom Left Detail - outside bottom left card */}
+          <img 
+            src={whyDetBottomLeft} 
+            alt="Bottom left decoration" 
+            className="hidden lg:block absolute bottom-[-10%] left-[20%] w-[25px] xl:w-[30px] h-auto animate-float z-30"
+            style={{animationDelay: '1s'}}
+          />
+          
+          {/* Dots - First Instance (top right corner of grid area) */}
+          <img 
+            src={whyDetDots} 
+            alt="Decorative dots top" 
+            className="hidden lg:block absolute top-[15%] right-[4%] w-[35px] xl:w-[40px] h-auto animate-float z-30"
+            style={{animationDelay: '1.5s'}}
+          />
+          
+          {/* Dots - Second Instance (bottom left corner of grid area) */}
+          <img 
+            src={whyDetDots} 
+            alt="Decorative dots bottom" 
+            className="hidden lg:block absolute bottom-[-10%] left-[6%] w-[35px] xl:w-[40px] h-auto animate-float z-30"
+            style={{animationDelay: '2s'}}
+          />
+          
+        </div>
+        
+      </div>
+    </section>
+  );
+}
+
+export default WhySection;

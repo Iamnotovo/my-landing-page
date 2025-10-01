@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent horizontal scrolling and trackpad gestures */
+html, body {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+/* Prevent horizontal scrolling on all elements */
+* {
+  overscroll-behavior-x: none;
+}
+
+/* Additional protection for the main container */
+main {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+/* Responsive improvements for hero section */
+@media (max-width: 1023px) {
+  /* Ensure smooth transitions on mobile */
+  .animate-floatBig {
+    animation-duration: 6s;
+  }
+  
+  /* Prevent layout shifts */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Desktop responsive improvements */
+@media (min-width: 1024px) {
+  /* Ensure elements scale proportionally */
+  #hero {
+    min-height: 100vh;
+  }
+}
