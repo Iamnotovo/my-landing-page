@@ -35,7 +35,7 @@ function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen bg-[#151A36] text-white overflow-hidden">
       {/* Mobile/Tablet Layout */}
-      <div className="lg:hidden relative flex flex-col items-center justify-center min-h-screen px-6 py-20 overflow-hidden">
+      <div className="xl:hidden relative flex flex-col items-center justify-center min-h-screen px-6 py-20 overflow-hidden">
         {/* Floating Icons - Responsive sizing */}
         <img 
           src={pen} 
@@ -112,7 +112,7 @@ function HeroSection() {
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:block relative mx-auto min-h-[900px] px-6 sm:px-10 lg:px-16 xl:px-0 w-full max-w-[1440px]">
+      <div className="hidden xl:block relative mx-auto min-h-[900px] px-6 sm:px-10 lg:px-16 xl:px-0 w-full max-w-[1440px]">
         {/* Left Rainbow - Hidden on smaller desktop screens */}
         <img 
           src={leftRainbow} 
