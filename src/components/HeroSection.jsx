@@ -14,8 +14,17 @@ function HeroSection() {
   const [mainTextRef, mainTextVisible] = useScrollAnimation();
   const [mascotRef, mascotVisible] = useScrollAnimation();
   const [rainbowsVisible, setRainbowsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Detect if we're on mobile/tablet
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1280);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
     // Check if hero section is in view on mount
     const heroElement = document.getElementById('hero');
     if (heroElement) {
@@ -30,12 +39,14 @@ function HeroSection() {
         setRainbowsVisible(true);
       }
     }
+    
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   return (
     <section id="hero" className="relative min-h-screen bg-[#151A36] text-white overflow-hidden">
       {/* Mobile/Tablet Layout */}
-      <div className="lg:hidden relative flex flex-col items-center justify-center min-h-screen px-6 py-20 overflow-hidden">
+      <div className="xl:hidden relative flex flex-col items-center justify-center min-h-screen px-6 py-20 overflow-hidden">
         {/* Floating Icons - Responsive sizing */}
         <img 
           src={pen} 
@@ -82,7 +93,7 @@ function HeroSection() {
         <div 
           ref={mainTextRef}
           className={`text-center mb-8 z-20 transition-all duration-700 ${
-            mainTextVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
+            isMobile || mainTextVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
           }`}
         >
           <h1 className="font-semibold leading-[1.2] text-[32px] sm:text-[40px] mb-6">
@@ -106,13 +117,13 @@ function HeroSection() {
           src={mascot} 
           alt="AceDiploma Mascot" 
           className={`w-[240px] sm:w-[280px] md:w-[320px] lg:w-[360px] h-auto z-20 transition-all duration-800 ${
-            mascotVisible ? 'animate-fadeInScale animate-floatBig' : 'opacity-0 scale-90'
+            isMobile || mascotVisible ? 'animate-fadeInScale animate-floatBig' : 'opacity-0 scale-90'
           }`} 
         />
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:block relative mx-auto min-h-[900px] px-6 sm:px-10 lg:px-16 xl:px-0 w-full max-w-[1440px]">
+      <div className="hidden xl:block relative mx-auto min-h-[900px] px-6 sm:px-10 lg:px-16 xl:px-0 w-full max-w-[1440px]">
         {/* Left Rainbow - Hidden on smaller desktop screens */}
         <img 
           src={leftRainbow} 

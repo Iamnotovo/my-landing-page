@@ -27,7 +27,7 @@ export const useScrollAnimation = (options = {}) => {
       },
       {
         threshold: options.threshold || 0.1,
-        rootMargin: options.rootMargin || '0px 0px -50px 0px'
+        rootMargin: options.rootMargin || '0px 0px -10px 0px'
       }
     );
 
