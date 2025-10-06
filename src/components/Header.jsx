@@ -11,11 +11,11 @@ function Header() {
 
             {/* Nav links - Hidden on very small screens */}
             <nav className="hidden sm:inline-flex absolute left-1/2 top-[19px] sm:top-[25px] -translate-x-1/2 items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 text-white">
-              <a className="text-[11px] sm:text-xs md:text-sm font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}>Home</a>
-              <a className="text-[11px] sm:text-xs md:text-sm font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('why')?.scrollIntoView({ behavior: 'smooth' })}>Features</a>
-              <a className="text-[11px] sm:text-xs md:text-sm font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}>Demo</a>
-              <a className="text-[11px] sm:text-xs md:text-sm font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}>Testimonials</a>
-              <a className="text-[11px] sm:text-xs md:text-sm font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('coming-soon')?.scrollIntoView({ behavior: 'smooth' })}>Pricing</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}>Home</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('why')?.scrollIntoView({ behavior: 'smooth' })}>Features</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}>Demo</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}>Testimonials</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('coming-soon')?.scrollIntoView({ behavior: 'smooth' })}>Pricing</a>
             </nav>
 
         {/* CTA Button - Bigger on small screens */}
