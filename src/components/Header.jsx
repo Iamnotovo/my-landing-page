@@ -18,8 +18,8 @@ function Header() {
               <a className="text-[11px] sm:text-xs md:text-sm font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('coming-soon')?.scrollIntoView({ behavior: 'smooth' })}>Pricing</a>
             </nav>
 
-        {/* CTA Button */}
-        <button className="absolute right-4 sm:right-6 lg:right-12 top-[15px] sm:top-[12px] inline-flex items-center gap-1 sm:gap-1.5 md:gap-2 rounded-xl sm:rounded-2xl bg-[#8980F5] px-2.5 sm:px-3 md:px-4 lg:px-5 py-1.5 sm:py-2 md:py-2.5 text-white font-[Outfit] hover:bg-[#7a70e8] transition-colors">
+        {/* CTA Button - Hidden on very small screens to prevent overlap */}
+        <button className="hidden sm:inline-flex absolute right-4 sm:right-6 lg:right-12 top-[15px] sm:top-[12px] items-center gap-1 sm:gap-1.5 md:gap-2 rounded-xl sm:rounded-2xl bg-[#8980F5] px-2.5 sm:px-3 md:px-4 lg:px-5 py-1.5 sm:py-2 md:py-2.5 text-white font-[Outfit] hover:bg-[#7a70e8] transition-colors">
           <span className="text-[10px] sm:text-[11px] md:text-xs lg:text-sm font-medium">Get started</span>
           <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.44 2.22L11.17 7.95L5.44 13.68" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

@@ -96,7 +96,7 @@ function HeroSection() {
             isMobile || mainTextVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h1 className="font-semibold leading-[1.2] text-[32px] sm:text-[40px] mb-6">
+          <h1 className="font-semibold leading-[1.2] text-[28px] sm:text-[40px] mb-6">
             Study the patterns, beat
             <br />
             the system - AceDiploma, play
