@@ -99,9 +99,9 @@ function HeroSection() {
           <h1 className="font-semibold leading-[1.2] text-[28px] sm:text-[40px] mb-6">
             Study the patterns, beat
             <br />
-            the system - AceDiploma, play
+            the system - AceDiploma,
             <br />
-            <span className="text-[#FF6878]">your cards right!</span>
+            <span className="text-[#FF6878]">play your cards right!</span>
           </h1>
           <button className="inline-flex items-center gap-2 rounded-2xl bg-[#8980F5] px-6 py-3 h-12 text-white font-medium hover:brightness-110 transition">
             Start Practicing
