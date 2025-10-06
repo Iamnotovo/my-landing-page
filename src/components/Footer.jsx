@@ -22,7 +22,7 @@ function Footer() {
                 <img src={aceDiplomaLogo} alt="AceDiploma" className="h-8 w-auto" />
               </div>
               <p className="text-white text-base font-[Outfit] font-normal">
-                Build by IB educators. Powered by AI. Designed for students like you.
+                Built by IB educators. Powered by AI. Designed for students like you.
               </p>
             </div>
             
@@ -117,7 +117,7 @@ function Footer() {
             </a>
             
             {/* LinkedIn */}
-            <a href="#" className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
+            <a href="https://www.linkedin.com/company/acediploma/about/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
               <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
             </a>
             
