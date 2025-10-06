@@ -7,9 +7,6 @@ import twitterIcon from '../assets/footer/twitter_icon.svg';
 function Footer() {
   return (
     <footer className="relative bg-[#151A36] border-t border-white/20">
-      {/* Separator line */}
-      <div className="absolute left-[70px] top-[320.5px] w-[1300px] h-px bg-[#265267]"></div>
-      
       {/* Main content container */}
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
