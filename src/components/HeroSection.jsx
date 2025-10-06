@@ -97,9 +97,9 @@ function HeroSection() {
           }`}
         >
           <h1 className="font-semibold leading-[1.2] text-[32px] sm:text-[40px] mb-6">
-            Study the patterns,
+            Study the patterns, beat
             <br />
-            beat the system - AceDiploma,
+            the system - AceDiploma,
             <br />
             <span className="text-[#FF6878]">play your cards right!</span>
           </h1>
