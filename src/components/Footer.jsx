@@ -1,6 +1,6 @@
 import aceDiplomaLogo from '../assets/header/ace-diploma-logo.svg';
 import instagramIcon from '../assets/footer/instagram_icon.svg';
-import facebookIcon from '../assets/footer/facebook_icon.svg';
+import tiktokIcon from '../assets/footer/tiktok_logo.svg';
 import linkedinIcon from '../assets/footer/linkedin_icon.svg';
 import twitterIcon from '../assets/footer/twitter_icon.svg';
 
@@ -95,9 +95,9 @@ function Footer() {
               <img src={instagramIcon} alt="Instagram" className="w-6 h-6" />
             </a>
             
-            {/* Facebook */}
+            {/* TikTok */}
             <a href="#" className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
-              <img src={facebookIcon} alt="Facebook" className="w-6 h-6" />
+              <img src={tiktokIcon} alt="TikTok" className="w-6 h-6" />
             </a>
             
             {/* LinkedIn */}
