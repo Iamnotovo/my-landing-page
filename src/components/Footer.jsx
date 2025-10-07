@@ -96,8 +96,8 @@ function Footer() {
             </a>
             
             {/* TikTok */}
-            <a href="#" className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
-              <img src={tiktokIcon} alt="TikTok" className="w-6 h-6" />
+            <a href="#" className="w-7 h-7 flex items-center justify-center hover:opacity-80 transition-opacity">
+              <img src={tiktokIcon} alt="TikTok" className="w-7 h-7" />
             </a>
             
             {/* LinkedIn */}
