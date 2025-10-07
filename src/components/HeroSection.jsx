@@ -160,7 +160,7 @@ function HeroSection() {
         </div>
 
         {/* Bee and Background Elements - All move together */}
-        <div className="absolute right-6 sm:right-12 lg:right-[60px] xl:left-[820px] 2xl:left-[1100px] xl:right-auto top-[80px] sm:top-[120px] xl:top-[140px] w-[240px] sm:w-[300px] lg:w-[340px] xl:w-[386px] 2xl:w-[500px] h-auto">
+        <div className="absolute right-6 sm:right-12 lg:right-[60px] xl:left-[835px] 2xl:left-[1100px] xl:right-auto top-[80px] sm:top-[120px] xl:top-[140px] w-[240px] sm:w-[300px] lg:w-[340px] xl:w-[386px] 2xl:w-[500px] h-auto">
           {/* Violet Circle - Behind the bee, above the right rainbow */}
           <img 
             src={circle} 
@@ -193,7 +193,7 @@ function HeroSection() {
         <img 
           src={rainbow} 
           alt="rainbow" 
-          className={`hidden xl:block absolute top-[320px] left-[1070px] 2xl:left-[1450px] w-[508px] 2xl:w-[700px] h-[218px] z-10 transition-all duration-1000 ${
+          className={`hidden xl:block absolute top-[320px] left-[1085px] 2xl:left-[1450px] w-[508px] 2xl:w-[700px] h-[218px] z-10 transition-all duration-1000 ${
             rainbowsVisible ? 'animate-slideInRight animate-pulseSoft' : 'opacity-0 translate-x-full'
           }`} 
         />
