@@ -47,10 +47,10 @@ function WhySection() {
                   <img src={pastPaperIcon} alt="Past papers icon" className="w-[90px] h-[90px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Past Paper Style Questions
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
@@ -64,10 +64,10 @@ function WhySection() {
                   <img src={aiIcon} alt="AI icon" className="w-[86px] h-[84px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     AI Assisted Auto-grading
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
@@ -86,10 +86,10 @@ function WhySection() {
                   <img src={examinerIcon} alt="Examiner mode icon" className="w-[90px] h-[90px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Examiner Mode
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
@@ -103,10 +103,10 @@ function WhySection() {
                   <img src={verifiedIcon} alt="Verified by teachers icon" className="w-[90px] h-[90px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Verified by IB Teachers
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
