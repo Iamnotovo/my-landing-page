@@ -59,7 +59,7 @@ function TestimonialsSection() {
   ];
 
   return (
-        <section id="testimonials" className="relative bg-[#151A36] text-white py-8 lg:py-12 overflow-hidden min-h-screen flex items-center">
+        <section id="testimonials" className="relative bg-[#151A36] text-white py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-8 lg:px-12">
         <h2 
           ref={headerRef}

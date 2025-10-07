@@ -11,7 +11,7 @@ function FinalCTA() {
   const [photoRef, photoVisible] = useScrollAnimation();
 
   return (
-    <section className="relative bg-[#151A36] text-white py-8 lg:py-12 overflow-hidden min-h-screen flex items-center">
+    <section className="relative bg-[#151A36] text-white py-4 lg:py-8 xl:py-12 2xl:py-16 overflow-hidden min-h-screen flex items-center">
       {/* Left Rainbow */}
       <img
         src={startLeftRainbow}
@@ -19,7 +19,7 @@ function FinalCTA() {
         className="pointer-events-none select-none hidden lg:block absolute
                    top-1/2 -translate-y-1/2
                    z-0 max-w-none"
-        style={{ left: 'calc(50% - 582.5px - 100px)' }}
+        style={{ left: 'calc(50% - 582.5px - 200px)' }}
       />
       {/* Right Rainbow (mirrored left) */}
       <img
@@ -28,10 +28,10 @@ function FinalCTA() {
         className="pointer-events-none select-none hidden lg:block absolute
                    top-1/2 -translate-y-1/2
                    z-0 max-w-none transform-gpu scale-x-[-1]"
-        style={{ right: 'calc(50% - 582.5px - 100px)' }}
+        style={{ right: 'calc(50% - 582.5px - 200px)' }}
       />
 
-      <div className="relative mx-auto max-w-5xl px-6 sm:px-8 lg:px-12">
+      <div className="relative mx-auto max-w-5xl 2xl:max-w-7xl px-6 sm:px-8 lg:px-12">
         {/* Card */}
         <div
           ref={contentRef}
@@ -45,15 +45,15 @@ function FinalCTA() {
           {/* Text content */}
           <div className="relative z-10 flex-1 flex flex-col justify-center items-center lg:items-start gap-6 text-center lg:text-left">
             <div className="flex flex-col gap-5">
-              <h2 className="text-white text-[24px] sm:text-[28px] lg:text-[32px] font-semibold leading-[1.3] font-[Outfit]">
+              <h2 className="text-white text-[24px] sm:text-[28px] lg:text-[32px] xl:text-[40px] 2xl:text-[48px] font-semibold leading-[1.3] font-[Outfit]">
                 Start practicing smarter today
               </h2>
-              <p className="text-white text-[16px] sm:text-[18px] lg:text-[20px] font-normal leading-[1.4] font-[Outfit]">
+              <p className="text-white text-[16px] sm:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-normal leading-[1.4] font-[Outfit]">
                 Join thousands of IB students using AceDiploma to boost their scores
               </p>
             </div>
 
-            <button className="inline-flex items-center gap-2 bg-[#8980F5] rounded-2xl px-6 py-3 text-white font-[Outfit] font-medium hover:bg-[#7a70e8] transition-colors">
+            <button className="inline-flex items-center gap-2 bg-[#8980F5] rounded-2xl px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 text-white font-[Outfit] font-medium hover:bg-[#7a70e8] transition-colors">
               <span className="text-sm">Start Practicing</span>
               <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center">
                 <img src={goToLogo} alt="Go" className="w-3 h-3 brightness-0" />
@@ -62,7 +62,7 @@ function FinalCTA() {
           </div>
 
           {/* Illustration */}
-          <div className="relative z-10 w-[320px] h-[320px] flex-shrink-0">
+          <div className="relative z-10 w-[320px] h-[320px] xl:w-[400px] xl:h-[400px] 2xl:w-[480px] 2xl:h-[480px] flex-shrink-0">
             <div 
               ref={ellipseRef}
               className={`absolute inset-0 bg-gradient-to-b from-[#8980F5] to-[#4133EF] rounded-full transition-all duration-1000 ${

@@ -7,7 +7,7 @@ import detTopLeft from "../assets/coming-soon/comingsoon_det_top_left1.png";
 import detTopRight from "../assets/coming-soon/comingsoon_det_top_right.png";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
-function ComingCard({ icon, title, desc }) {
+function ComingCard({ icon, title, desc, showBackground = false }) {
   return (
     <div className="group relative overflow-hidden bg-[#1F2846]/90 rounded-[14px] px-6 py-6 md:px-8 md:py-8 border border-white/10 backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.18)] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.26)]">
       {/* per-card ambient glow */}
@@ -17,8 +17,8 @@ function ComingCard({ icon, title, desc }) {
       </div>
 
       <div className="relative flex items-center gap-5 z-10">
-        <div className="relative w-[72px] h-[72px] md:w-[90px] md:h-[90px]">
-          <div className="absolute inset-0 rounded-full bg-[#726BF9]" />
+        <div className="relative w-[72px] h-[72px] md:w-[90px] md:h-[90px] flex-shrink-0">
+          {showBackground && <div className="absolute inset-0 rounded-full bg-[#726BF9]" />}
           <img src={icon} alt="" className="absolute inset-0 w-full h-full object-contain" />
         </div>
         <div>
@@ -43,14 +43,14 @@ export default function ComingSoon() {
   const [detTopLeftRef, detTopLeftVisible] = useScrollAnimation();
 
   const items = [
-    { icon: planner, title: "Automatic Study Planner", desc: "Build study schedules automatically from your goals and deadlines." },
-    { icon: heatmap, title: "Progress Heatmaps", desc: "Visualize strengths and gaps over time with per-topic heatmaps." },
-    { icon: answers, title: "Sample Answers", desc: "Explore model responses and examiner-style notes for tough questions." },
-    { icon: mobile, title: "Mobile App", desc: "Practice on the go with offline support and daily streaks." },
+    { icon: planner, title: "Automatic Study Planner", desc: "Build study schedules automatically from your goals and deadlines.", showBackground: false },
+    { icon: heatmap, title: "Progress Heatmaps", desc: "Visualize strengths and gaps over time with per-topic heatmaps.", showBackground: true },
+    { icon: answers, title: "Sample Answers", desc: "Explore model responses and examiner-style notes for tough questions.", showBackground: true },
+    { icon: mobile, title: "Mobile App", desc: "Practice on the go with offline support and daily streaks.", showBackground: false },
   ];
 
   return (
-        <section id="coming-soon" className="relative bg-[#151A36] text-white py-8 lg:py-12 overflow-hidden min-h-screen flex items-center">
+        <section id="coming-soon" className="relative bg-[#151A36] text-white py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
       <div className="relative z-10 mx-auto max-w-6xl px-6 sm:px-8 lg:px-12">
         <div 
           ref={headerRef}
@@ -74,8 +74,8 @@ export default function ComingSoon() {
             <div className="absolute -bottom-[180px] -right-[120px] w-[420px] h-[380px] bg-[#8980F5] opacity-[0.12] blur-[110px] rounded-full" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-            {items.map(({ icon, title, desc }) => (
-              <ComingCard key={title} icon={icon} title={title} desc={desc} />
+            {items.map(({ icon, title, desc, showBackground }) => (
+              <ComingCard key={title} icon={icon} title={title} desc={desc} showBackground={showBackground} />
             ))}
           </div>
         </div>

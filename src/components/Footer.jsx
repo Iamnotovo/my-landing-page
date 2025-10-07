@@ -25,19 +25,6 @@ function Footer() {
             
             {/* Contact Information */}
             <div className="flex flex-col gap-4">
-              {/* Address */}
-              <div className="flex items-center gap-4">
-                <div className="w-6 h-6 flex items-center justify-center">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 0C5.2 0 3 2.2 3 5C3 9 8 16 8 16S13 9 13 5C13 2.2 10.8 0 8 0ZM8 7C6.9 7 6 6.1 6 5C6 3.9 6.9 3 8 3C9.1 3 10 3.9 10 5C10 6.1 9.1 7 8 7Z" fill="white"/>
-                  </svg>
-                </div>
-                <span className="text-white text-base font-[Outfit] font-medium">Address</span>
-                <span className="text-white text-sm font-[Outfit] font-light leading-6">
-                  El garage de patrick
-                </span>
-              </div>
-              
               {/* Contact */}
               <div className="flex items-center gap-4">
                 <div className="w-6 h-6 flex items-center justify-center">

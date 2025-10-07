@@ -14,7 +14,7 @@ function DemoSection() {
   const [rightClocksRef, rightClocksVisible] = useScrollAnimation({ threshold: 0.1, rootMargin: '0px 0px 0px 0px' });
 
   return (
-        <section id="demo" className="relative bg-[#151A36] text-white py-4 lg:py-6 overflow-hidden min-h-screen flex items-center">
+        <section id="demo" className="relative bg-[#151A36] text-white py-2 lg:py-4 overflow-hidden min-h-screen flex items-center">
       
       {/* Left Clocks - Touch screen edge */}
       <img 
