@@ -3,6 +3,10 @@ import whyDetTopRight from "../assets/why/why_det_top_right.png";
 import whyDetBottomLeft from "../assets/why/why_det_bottom left.png";
 import whyDetDots from "../assets/why/why_det_dots.png";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import pastPaperIcon from "../assets/why/past_paper_icon.png";
+import aiIcon from "../assets/why/AI_icon.png";
+import examinerIcon from "../assets/why/examiner_icon.png";
+import verifiedIcon from "../assets/why/verified_icon.png";
 
 function WhySection() {
   const [headerRef, headerVisible] = useScrollAnimation();
@@ -39,10 +43,8 @@ function WhySection() {
             {/* Top Row - Past Paper Style Questions */}
             <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    📚
-                  </div>
+                <div className="w-[106px] h-[106px] p-[22px] rounded-full bg-[#FFC743] flex items-center justify-center flex-shrink-0">
+                  <img src={pastPaperIcon} alt="Past papers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2 text-white">
@@ -58,10 +60,8 @@ function WhySection() {
             {/* Bottom Row - AI Assisted Auto-grading */}
             <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    🤖
-                  </div>
+                <div className="w-[106px] h-[106px] p-[22px] rounded-full bg-[#EA69B8] flex items-center justify-center flex-shrink-0">
+                  <img src={aiIcon} alt="AI icon" className="w-[69px] h-[68px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2 text-white">
@@ -82,10 +82,8 @@ function WhySection() {
             {/* Top Row - Examiner Mode */}
             <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    📋
-                  </div>
+                <div className="w-[106px] h-[106px] p-[22px] rounded-full bg-[#7979FF] flex items-center justify-center flex-shrink-0">
+                  <img src={examinerIcon} alt="Examiner mode icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2 text-white">
@@ -101,10 +99,8 @@ function WhySection() {
             {/* Bottom Row - Verified by IB Teachers */}
             <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    ✅
-                  </div>
+                <div className="w-[106px] h-[106px] p-[22px] rounded-full bg-[#69A2FF] flex items-center justify-center flex-shrink-0">
+                  <img src={verifiedIcon} alt="Verified by teachers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-2 text-white">
