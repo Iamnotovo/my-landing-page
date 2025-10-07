@@ -43,8 +43,8 @@ function WhySection() {
             {/* Top Row - Past Paper Style Questions */}
             <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-center gap-6 h-full">
-                <div className="w-[94px] h-[94px] p-[4px] rounded-full bg-[#FFC743] flex items-center justify-center flex-shrink-0">
-                  <img src={pastPaperIcon} alt="Past papers icon" className="w-[90px] h-[90px] object-contain" />
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#FFC743] flex items-center justify-center flex-shrink-0">
+                  <img src={pastPaperIcon} alt="Past papers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
@@ -60,8 +60,8 @@ function WhySection() {
             {/* Bottom Row - AI Assisted Auto-grading */}
             <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-center gap-6 h-full">
-                <div className="w-[94px] h-[94px] p-[4px] rounded-full bg-[#EA69B8] flex items-center justify-center flex-shrink-0">
-                  <img src={aiIcon} alt="AI icon" className="w-[86px] h-[84px] object-contain" />
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#EA69B8] flex items-center justify-center flex-shrink-0">
+                  <img src={aiIcon} alt="AI icon" className="w-[69px] h-[68px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
@@ -82,8 +82,8 @@ function WhySection() {
             {/* Top Row - Examiner Mode */}
             <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-center gap-6 h-full">
-                <div className="w-[94px] h-[94px] p-[4px] rounded-full bg-[#7979FF] flex items-center justify-center flex-shrink-0">
-                  <img src={examinerIcon} alt="Examiner mode icon" className="w-[90px] h-[90px] object-contain" />
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#7979FF] flex items-center justify-center flex-shrink-0">
+                  <img src={examinerIcon} alt="Examiner mode icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
@@ -99,8 +99,8 @@ function WhySection() {
             {/* Bottom Row - Verified by IB Teachers */}
             <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
               <div className="flex items-center gap-6 h-full">
-                <div className="w-[94px] h-[94px] p-[4px] rounded-full bg-[#69A2FF] flex items-center justify-center flex-shrink-0">
-                  <img src={verifiedIcon} alt="Verified by teachers icon" className="w-[90px] h-[90px] object-contain" />
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#69A2FF] flex items-center justify-center flex-shrink-0">
+                  <img src={verifiedIcon} alt="Verified by teachers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
