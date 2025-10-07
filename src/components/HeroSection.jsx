@@ -140,7 +140,7 @@ function HeroSection() {
         {/* Main Text - Bigger when rainbows hidden */}
         <div 
           ref={mainTextRef}
-          className={`absolute left-2 sm:left-8 lg:left-[44px] xl:left-[185px] 2xl:left-[235px] top-[180px] sm:top-[240px] xl:top-[290px] w-full max-w-[700px] lg:max-w-[800px] xl:max-w-[750px] 2xl:max-w-[900px] z-20 transition-all duration-700 ${
+          className={`absolute left-2 sm:left-8 lg:left-[36px] xl:left-[170px] 2xl:left-[220px] top-[180px] sm:top-[240px] xl:top-[290px] w-full max-w-[700px] lg:max-w-[800px] xl:max-w-[750px] 2xl:max-w-[900px] z-20 transition-all duration-700 ${
             mainTextVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
           }`}
         >
