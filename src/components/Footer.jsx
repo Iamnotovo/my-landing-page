@@ -1,15 +1,12 @@
 import aceDiplomaLogo from '../assets/header/ace-diploma-logo.svg';
 import instagramIcon from '../assets/footer/instagram_icon.svg';
-import facebookIcon from '../assets/footer/facebook_icon.svg';
+import tiktokIcon from '../assets/footer/tiktok_logo.svg';
 import linkedinIcon from '../assets/footer/linkedin_icon.svg';
 import twitterIcon from '../assets/footer/twitter_icon.svg';
 
 function Footer() {
   return (
     <footer className="relative bg-[#151A36] border-t border-white/20">
-      {/* Separator line */}
-      <div className="absolute left-[70px] top-[320.5px] w-[1300px] h-px bg-[#265267]"></div>
-      
       {/* Main content container */}
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
@@ -22,25 +19,12 @@ function Footer() {
                 <img src={aceDiplomaLogo} alt="AceDiploma" className="h-8 w-auto" />
               </div>
               <p className="text-white text-base font-[Outfit] font-normal">
-                Build by IB educators. Powered by AI. Designed for students like you.
+                Built by IB educators. Powered by AI. Designed for students like you.
               </p>
             </div>
             
             {/* Contact Information */}
             <div className="flex flex-col gap-4">
-              {/* Address */}
-              <div className="flex items-center gap-4">
-                <div className="w-6 h-6 flex items-center justify-center">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 0C5.2 0 3 2.2 3 5C3 9 8 16 8 16S13 9 13 5C13 2.2 10.8 0 8 0ZM8 7C6.9 7 6 6.1 6 5C6 3.9 6.9 3 8 3C9.1 3 10 3.9 10 5C10 6.1 9.1 7 8 7Z" fill="white"/>
-                  </svg>
-                </div>
-                <span className="text-white text-base font-[Outfit] font-medium">Address</span>
-                <span className="text-white text-sm font-[Outfit] font-light leading-6">
-                  El garage de patrick
-                </span>
-              </div>
-              
               {/* Contact */}
               <div className="flex items-center gap-4">
                 <div className="w-6 h-6 flex items-center justify-center">
@@ -111,13 +95,13 @@ function Footer() {
               <img src={instagramIcon} alt="Instagram" className="w-6 h-6" />
             </a>
             
-            {/* Facebook */}
-            <a href="#" className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
-              <img src={facebookIcon} alt="Facebook" className="w-6 h-6" />
+            {/* TikTok */}
+            <a href="#" className="w-7 h-7 flex items-center justify-center hover:opacity-80 transition-opacity">
+              <img src={tiktokIcon} alt="TikTok" className="w-7 h-7" />
             </a>
             
             {/* LinkedIn */}
-            <a href="#" className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
+            <a href="https://www.linkedin.com/company/acediploma/about/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 flex items-center justify-center hover:opacity-80 transition-opacity">
               <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-6" />
             </a>
             

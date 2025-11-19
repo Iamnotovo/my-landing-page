@@ -3,15 +3,19 @@ import whyDetTopRight from "../assets/why/why_det_top_right.png";
 import whyDetBottomLeft from "../assets/why/why_det_bottom left.png";
 import whyDetDots from "../assets/why/why_det_dots.png";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
+import pastPaperIcon from "../assets/why/past_paper_icon.png";
+import aiIcon from "../assets/why/AI_icon.png";
+import examinerIcon from "../assets/why/examiner_icon.png";
+import verifiedIcon from "../assets/why/verified_icon.png";
 
 function WhySection() {
   const [headerRef, headerVisible] = useScrollAnimation();
   const [cardsRef, cardsVisible] = useScrollAnimation();
 
   return (
-        <section id="why" className="relative bg-[#151A36] text-white py-8 lg:py-12 overflow-hidden min-h-screen flex items-center">
+        <section id="why" className="relative bg-[#151A36] text-white py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
       {/* Container */}
-      <div className="relative mx-auto max-w-5xl px-6 sm:px-8 lg:px-12">
+      <div className="relative mx-auto max-w-[68rem] px-6 sm:px-8 lg:px-12">
         
         {/* Section Header */}
         <div 
@@ -37,18 +41,16 @@ function WhySection() {
           <div className="grid gap-6">
             
             {/* Top Row - Past Paper Style Questions */}
-            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    📚
-                  </div>
+            <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-center gap-6 h-full">
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#FFC743] flex items-center justify-center flex-shrink-0">
+                  <img src={pastPaperIcon} alt="Past papers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Past Paper Style Questions
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
@@ -56,18 +58,16 @@ function WhySection() {
             </div>
 
             {/* Bottom Row - AI Assisted Auto-grading */}
-            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    🤖
-                  </div>
+            <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-center gap-6 h-full">
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#EA69B8] flex items-center justify-center flex-shrink-0">
+                  <img src={aiIcon} alt="AI icon" className="w-[69px] h-[68px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     AI Assisted Auto-grading
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
@@ -80,18 +80,16 @@ function WhySection() {
           <div className="grid gap-6">
             
             {/* Top Row - Examiner Mode */}
-            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    📋
-                  </div>
+            <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-center gap-6 h-full">
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#7979FF] flex items-center justify-center flex-shrink-0">
+                  <img src={examinerIcon} alt="Examiner mode icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Examiner Mode
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
@@ -99,18 +97,16 @@ function WhySection() {
             </div>
 
             {/* Bottom Row - Verified by IB Teachers */}
-            <div className="bg-[#1E2440] rounded-xl p-4 lg:p-6 border border-white/10 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center flex-shrink-0">
-                  <div className="w-6 h-6 bg-white/20 rounded backdrop-blur-sm flex items-center justify-center text-xs transition-transform duration-300 group-hover:scale-105">
-                    ✅
-                  </div>
+            <div className="bg-[#1E2440] rounded-xl p-8 border border-white/10 h-[184px] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_14px_30px_rgba(0,0,0,0.3)]">
+              <div className="flex items-center gap-6 h-full">
+                <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#69A2FF] flex items-center justify-center flex-shrink-0">
+                  <img src={verifiedIcon} alt="Verified by teachers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 text-white">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Verified by IB Teachers
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-sm">
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
                   </p>
                 </div>
