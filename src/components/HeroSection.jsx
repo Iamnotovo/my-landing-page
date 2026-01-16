@@ -165,7 +165,7 @@ function HeroSection() {
           <img 
             src={circle} 
             alt="background circle" 
-            className="absolute top-[110px] sm:top-[110px] lg:top-[95px] xl:top-[110px] left-[25px] sm:left-[25px] lg:left-[15px] xl:left-[25px] w-[240px] sm:w-[280px] lg:w-[300px] xl:w-[322px] 2xl:w-[420px] h-auto z-20 animate-pulsePop" 
+            className="absolute top-[110px] sm:top-[110px] lg:top-[95px] xl:top-[110px] left-[25px] sm:left-[25px] lg:left-[15px] xl:left-[25px] w-[240px] sm:w-[280px] lg:w-[300px] xl:w-[322px] 2xl:w-[420px] h-auto z-30 animate-pulsePop" 
           />
 
           {/* Big and Small Border Circles - Behind right rainbow and icons */}
@@ -177,7 +177,7 @@ function HeroSection() {
             ref={mascotRef}
             src={mascot} 
             alt="AceDiploma Mascot" 
-            className={`relative w-full h-auto z-50 will-change-transform transition-all duration-800 ${
+            className={`relative w-full h-auto z-40 will-change-transform transition-all duration-800 ${
               mascotVisible ? 'animate-fadeInScale animate-floatBig' : 'opacity-0 scale-90'
             }`} 
           />
