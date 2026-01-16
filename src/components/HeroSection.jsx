@@ -107,12 +107,12 @@ function HeroSection() {
             <br />
             <span className="text-[#FF6878]">play your cards right!</span>
           </h1>
-          <button className="inline-flex items-center gap-2 rounded-2xl bg-[#8980F5] px-6 py-3 h-12 text-white font-medium hover:brightness-110 transition">
+          <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-2xl bg-[#8980F5] px-6 py-3 h-12 text-white font-medium hover:brightness-110 transition">
             Start Practicing
             <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
               <img src={goToLogo} alt="Go" className="w-4 h-4 brightness-0" />
             </div>
-          </button>
+          </a>
         </div>
 
         {/* Mascot - Mobile/Tablet */}
@@ -151,12 +151,12 @@ function HeroSection() {
             <br />
             <span className="text-[#FF6878]">play your cards right!</span>
           </h1>
-          <button className="mt-6 sm:mt-8 xl:mt-[42px] inline-flex items-center gap-2 rounded-2xl bg-[#8980F5] px-5 py-2.5 h-12 xl:h-14 2xl:h-16 text-white font-medium hover:brightness-110 transition">
+          <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="mt-6 sm:mt-8 xl:mt-[42px] inline-flex items-center gap-2 rounded-2xl bg-[#8980F5] px-5 py-2.5 h-12 xl:h-14 2xl:h-16 text-white font-medium hover:brightness-110 transition">
             Start Practicing
             <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
               <img src={goToLogo} alt="Go" className="w-4 h-4 brightness-0" />
             </div>
-          </button>
+          </a>
         </div>
 
         {/* Bee and Background Elements - All move together */}

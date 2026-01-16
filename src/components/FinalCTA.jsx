@@ -53,12 +53,12 @@ function FinalCTA() {
               </p>
             </div>
 
-            <button className="inline-flex items-center gap-2 bg-[#8980F5] rounded-2xl px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 text-white font-[Outfit] font-medium hover:bg-[#7a70e8] transition-colors">
+            <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#8980F5] rounded-2xl px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 text-white font-[Outfit] font-medium hover:bg-[#7a70e8] transition-colors">
               <span className="text-sm">Start Practicing</span>
               <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center">
                 <img src={goToLogo} alt="Go" className="w-3 h-3 brightness-0" />
               </div>
-            </button>
+            </a>
           </div>
 
           {/* Illustration */}
