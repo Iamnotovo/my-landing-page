@@ -69,14 +69,19 @@ function DemoSection() {
           {/* Main Action Video */}
           <div 
             ref={photoRef}
-            className={`relative z-20 transition-all duration-800 ${
+            className={`relative z-20 transition-all duration-800 overflow-hidden ${
               photoVisible ? 'animate-fadeInScale' : 'opacity-0 scale-90'
             }`}
           >
             <video 
               ref={videoRef}
               src={homepageVideo}
-              className="w-full max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] h-auto mx-auto shadow-2xl"
+              className="w-full max-w-[550px] lg:max-w-[650px] xl:max-w-[750px] h-auto mx-auto block rounded-lg"
+              style={{ 
+                display: 'block', 
+                marginTop: '-3px',
+                boxShadow: '0 25px 80px -10px rgba(0, 0, 0, 0.95), 0 15px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.7), inset 0 0 20px rgba(0, 0, 0, 0.3)'
+              }}
               muted
               playsInline
               loop
