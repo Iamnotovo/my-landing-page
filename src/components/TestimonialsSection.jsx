@@ -2,6 +2,9 @@ import detTopLeft from "../assets/testimonials/testimonials_det_top_left.png";
 import detTopRight from "../assets/testimonials/testimonials_det_top_right.png";
 import detBottomLeft from "../assets/testimonials/testimonials_det_bottom left.png";
 import detDots from "../assets/testimonials/testimonialsdet_dots.png";
+import nicolasBalzamo from "../assets/testimonials/nicolas-balzamo.jpeg";
+import russellHoward from "../assets/testimonials/russell-howard.jpeg";
+import yunhan from "../assets/testimonials/yunhan.JPG";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 function StarRow() {
@@ -39,22 +42,22 @@ function TestimonialsSection() {
 
   const cards = [
     {
-      avatar: "https://dummyimage.com/80x80/3f51b5/ffffff&text=A",
-      name: "Alam Iqbal",
+      avatar: nicolasBalzamo,
+      name: "Nicolas Balzamo",
       text:
-        "This exam material was a life saver for my lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+        "Past-paper style questions are actually past-paper style. The wording and difficulty feel real, so when I practice it doesn't feel like I'm guessing what the exam will be like.",
     },
     {
-      avatar: "https://dummyimage.com/80x80/e91e63/ffffff&text=B",
-      name: "Aman Lee",
+      avatar: russellHoward,
+      name: "Russell Howard",
       text:
-        "This AI auto grading was a life saver for my lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim, metus nec fringilla accumsan.",
+        "The AI auto-grading is a game changer. I get feedback instantly and it tells me exactly where I'm losing marks, so I can fix it straight away instead of repeating the same mistakes.",
     },
     {
-      avatar: "https://dummyimage.com/80x80/00bcd4/ffffff&text=C",
-      name: "Sarah Cohen",
+      avatar: yunhan,
+      name: "Yunhan Zhu",
       text:
-        "This exam material was a life saver for my lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus nec fringilla accumsan.",
+        "Examiner Mode made me way better under time pressure. It feels like a proper exam setup, and I like that the content is teacher-verified because I don't trust random notes online anymore.",
     },
   ];
 

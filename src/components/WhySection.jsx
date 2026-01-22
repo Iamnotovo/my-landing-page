@@ -46,12 +46,12 @@ function WhySection() {
                 <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#FFC743] flex items-center justify-center flex-shrink-0">
                   <img src={pastPaperIcon} alt="Past papers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
-                <div>
+                <div className="flex-1" style={{ maxWidth: '75%' }}>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Past Paper Style Questions
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm text-justify">
+                    Practice with authentic exam questions that match IB style, difficulty, and wording, so nothing feels unfamiliar on test day.
                   </p>
                 </div>
               </div>
@@ -63,12 +63,12 @@ function WhySection() {
                 <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#EA69B8] flex items-center justify-center flex-shrink-0">
                   <img src={aiIcon} alt="AI icon" className="w-[69px] h-[68px] object-contain" />
                 </div>
-                <div>
+                <div className="flex-1" style={{ maxWidth: '75%' }}>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     AI Assisted Auto-grading
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm text-justify">
+                    Instant evaluation with actionable, mark-focused guidance, highlighting gaps, suggesting corrections, and whithout having to wait for anyone
                   </p>
                 </div>
               </div>
@@ -85,12 +85,12 @@ function WhySection() {
                 <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#7979FF] flex items-center justify-center flex-shrink-0">
                   <img src={examinerIcon} alt="Examiner mode icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
-                <div>
+                <div className="flex-1" style={{ maxWidth: '75%' }}>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Examiner Mode
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm text-justify">
+                    Train under real exam conditions: timed sessions, mark distribution, and performance summaries that reveal pacing and weak topics.
                   </p>
                 </div>
               </div>
@@ -102,12 +102,12 @@ function WhySection() {
                 <div className="w-[84px] h-[84px] p-[5px] rounded-full bg-[#69A2FF] flex items-center justify-center flex-shrink-0">
                   <img src={verifiedIcon} alt="Verified by teachers icon" className="w-[74px] h-[74px] object-contain" />
                 </div>
-                <div>
+                <div className="flex-1" style={{ maxWidth: '75%' }}>
                   <h3 className="text-lg md:text-xl font-semibold mb-1 text-white">
                     Verified by IB Teachers
                   </h3>
-                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                  <p className="text-gray-300 leading-relaxed text-xs md:text-sm text-justify">
+                    Content reviewed for accuracy and relevance, aligned with IB expectations, so you can trust what you're studying and how you're being assessed.
                   </p>
                 </div>
               </div>
