@@ -44,7 +44,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen bg-white text-[#151A36] overflow-hidden">
+    <section id="hero" className="relative min-h-screen bg-[#E5ECE4] text-[#064942] overflow-hidden">
       {/* Mobile/Tablet Layout */}
       <div className="xl:hidden relative flex flex-col items-center justify-center min-h-screen px-6 py-20 overflow-hidden">
         {/* Floating Icons - Responsive sizing */}
@@ -105,9 +105,9 @@ function HeroSection() {
             <br />
             the system - AceDiploma,
             <br />
-            <span className="text-[#FF6878]">play your cards right!</span>
+            <span className="text-[#F48D05]">play your cards right!</span>
           </h1>
-          <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-2xl bg-[#8980F5] px-6 py-3 h-12 text-white font-medium hover:brightness-110 transition">
+          <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-2xl bg-[#064942] px-6 py-3 h-12 text-white font-medium hover:bg-[#7F9F76] transition">
             Start Practicing
             <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
               <img src={goToLogo} alt="Go" className="w-4 h-4 brightness-0" />
@@ -149,9 +149,9 @@ function HeroSection() {
             <br />
             the system - AceDiploma,
             <br />
-            <span className="text-[#FF6878]">play your cards right!</span>
+            <span className="text-[#F48D05]">play your cards right!</span>
           </h1>
-          <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="mt-6 sm:mt-8 xl:mt-[42px] inline-flex items-center gap-2 rounded-2xl bg-[#8980F5] px-5 py-2.5 h-12 xl:h-14 2xl:h-16 text-white font-medium hover:brightness-110 transition">
+          <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="mt-6 sm:mt-8 xl:mt-[42px] inline-flex items-center gap-2 rounded-2xl bg-[#064942] px-5 py-2.5 h-12 xl:h-14 2xl:h-16 text-white font-medium hover:bg-[#7F9F76] transition">
             Start Practicing
             <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
               <img src={goToLogo} alt="Go" className="w-4 h-4 brightness-0" />
@@ -169,8 +169,8 @@ function HeroSection() {
           />
 
           {/* Big and Small Border Circles - Behind right rainbow and icons */}
-          <div className="absolute top-[20px] left-[-63px] w-[350px] sm:w-[400px] lg:w-[450px] xl:w-[505px] 2xl:w-[650px] h-[350px] sm:h-[400px] lg:h-[450px] xl:h-[505px] 2xl:h-[650px] rounded-full border border-white/20 animate-rotateSlow z-0" />
-          <div className="absolute top-[60px] left-[-20px] w-[280px] sm:w-[320px] lg:w-[370px] xl:w-[411px] 2xl:w-[520px] h-[280px] sm:h-[320px] lg:h-[370px] xl:h-[411px] 2xl:h-[520px] rounded-full border border-white/20 animate-rotateSlow z-0" />
+          <div className="absolute top-[20px] left-[-63px] w-[350px] sm:w-[400px] lg:w-[450px] xl:w-[505px] 2xl:w-[650px] h-[350px] sm:h-[400px] lg:h-[450px] xl:h-[505px] 2xl:h-[650px] rounded-full border-2 border-[#064942]/25 animate-rotateSlow z-0" />
+          <div className="absolute top-[60px] left-[-20px] w-[280px] sm:w-[320px] lg:w-[370px] xl:w-[411px] 2xl:w-[520px] h-[280px] sm:h-[320px] lg:h-[370px] xl:h-[411px] 2xl:h-[520px] rounded-full border-2 border-[#064942]/25 animate-rotateSlow z-0" />
 
           {/* Mascot - Front (make positioned so z-index applies) */}
           <img 

@@ -1,6 +1,7 @@
 import homepageVideo from "../assets/demo/Homepage Video.MOV";
-import leftClocks from "../assets/demo/left_clocks.png";
-import rightClocks from "../assets/demo/right_clocks.png";
+import actionDetails1 from "../assets/demo/action_details1.png";
+import actionDetails3 from "../assets/demo/action_details3.png";
+import actionDetails5 from "../assets/demo/action_details5.png";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import { useEffect, useRef } from "react";
 
@@ -21,28 +22,39 @@ function DemoSection() {
   }, [photoVisible]);
 
   return (
-        <section id="demo" className="relative bg-white text-[#151A36] pt-8 lg:pt-12 pb-16 lg:pb-20 overflow-hidden min-h-screen flex items-start">
+        <section id="demo" className="relative bg-white text-[#064942] pt-8 lg:pt-12 pb-16 lg:pb-20 overflow-hidden min-h-screen flex items-start">
       
-      {/* Left Clocks - Touch screen edge */}
+      {/* Details around center demo block */}
       <img 
         ref={leftClocksRef}
-        src={leftClocks} 
-        alt="Left decorative clocks" 
-        className={`hidden lg:block absolute left-0 top-[45%] -translate-y-1/2 w-[150px] xl:w-[180px] h-auto z-10 animate-float ${
+        src={actionDetails1} 
+        alt="" 
+        className={`hidden lg:block absolute left-[18%] top-[27%] w-[30px] xl:w-[36px] h-auto z-10 animate-float ${
           leftClocksVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
         } transition-all duration-1000`}
         style={{animationDelay: '0s'}}
       />
       
-      {/* Right Clocks - Touch screen edge */}
       <img 
         ref={rightClocksRef}
-        src={rightClocks} 
-        alt="Right decorative clocks" 
-        className={`hidden lg:block absolute right-0 top-[45%] -translate-y-1/2 w-[150px] xl:w-[180px] h-auto z-10 animate-float ${
+        src={actionDetails3} 
+        alt="" 
+        className={`hidden lg:block absolute right-[19%] bottom-[17%] w-[14px] xl:w-[18px] h-auto z-10 animate-float ${
           rightClocksVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'
         } transition-all duration-1000`}
         style={{animationDelay: '0.5s'}}
+      />
+      <img
+        src={actionDetails5}
+        alt=""
+        className="hidden lg:block absolute left-[16%] bottom-[18%] w-[26px] xl:w-[32px] h-auto z-10 animate-float"
+        style={{ animationDelay: "0.9s" }}
+      />
+      <img
+        src={actionDetails1}
+        alt=""
+        className="hidden lg:block absolute right-[16%] top-[26%] w-[24px] xl:w-[30px] h-auto z-10 animate-float"
+        style={{ animationDelay: "1.2s" }}
       />
 
       {/* Container */}
@@ -58,7 +70,7 @@ function DemoSection() {
           <h2 className="font-semibold text-[32px] sm:text-[40px] lg:text-[48px] leading-[1.2] mb-4">
             See Ace Diploma in action
           </h2>
-          <p className="text-gray-600 text-lg sm:text-xl max-w-2xl mx-auto">
+          <p className="text-[#7F9F76] text-lg sm:text-xl max-w-2xl mx-auto">
             Answer questions, get instant AI feedback, track progress
           </p>
         </div>

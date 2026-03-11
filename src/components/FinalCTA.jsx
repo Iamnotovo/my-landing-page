@@ -13,7 +13,7 @@ function FinalCTA() {
   const [photoRef, photoVisible] = useScrollAnimation();
 
   return (
-    <section className="relative bg-white text-[#151A36] py-4 lg:py-8 xl:py-12 2xl:py-16 overflow-hidden min-h-screen flex items-center">
+    <section className="relative bg-white text-[#064942] py-4 lg:py-8 xl:py-12 2xl:py-16 overflow-hidden min-h-screen flex items-center">
       {/* Left Rainbow */}
       <img
         src={leftRainbow}
@@ -37,7 +37,7 @@ function FinalCTA() {
         {/* Card */}
         <div
           ref={contentRef}
-          className={`relative bg-[#1F2846] rounded-[20px] p-8 lg:p-12 
+          className={`relative bg-[#E5ECE4] rounded-[20px] p-8 lg:p-12 
                       flex flex-col lg:flex-row items-center gap-8 lg:gap-12 
                       transition-all duration-700 ${
                         contentVisible ? "animate-fadeInScale" : "opacity-0 scale-90"
@@ -47,15 +47,15 @@ function FinalCTA() {
           {/* Text content */}
           <div className="relative z-10 flex-1 flex flex-col justify-center items-center lg:items-start gap-6 text-center lg:text-left">
             <div className="flex flex-col gap-5">
-              <h2 className="text-white text-[24px] sm:text-[28px] lg:text-[32px] xl:text-[40px] 2xl:text-[48px] font-semibold leading-[1.3] font-[Outfit]">
+              <h2 className="text-[#064942] text-[24px] sm:text-[28px] lg:text-[32px] xl:text-[40px] 2xl:text-[48px] font-semibold leading-[1.3] font-[Outfit]">
                 Start practicing smarter today
               </h2>
-              <p className="text-white text-[16px] sm:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-normal leading-[1.4] font-[Outfit]">
+              <p className="text-[#7F9F76] text-[16px] sm:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-normal leading-[1.4] font-[Outfit]">
                 Join thousands of IB students using AceDiploma to boost their scores
               </p>
             </div>
 
-            <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#8980F5] rounded-2xl px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 text-white font-[Outfit] font-medium hover:bg-[#7a70e8] transition-colors">
+            <a href="https://adv01.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#064942] rounded-2xl px-6 py-3 xl:px-8 xl:py-4 2xl:px-10 2xl:py-5 text-white font-[Outfit] font-medium hover:bg-[#7F9F76] transition-colors">
               <span className="text-sm">Start Practicing</span>
               <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center">
                 <img src={goToLogo} alt="Go" className="w-3 h-3 brightness-0" />

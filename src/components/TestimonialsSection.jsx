@@ -1,7 +1,6 @@
-import detTopLeft from "../assets/testimonials/testimonials_det_top_left.png";
-import detTopRight from "../assets/testimonials/testimonials_det_top_right.png";
-import detBottomLeft from "../assets/testimonials/testimonials_det_bottom left.png";
-import detDots from "../assets/testimonials/testimonialsdet_dots.png";
+import actionDetails1 from "../assets/demo/action_details1.png";
+import actionDetails3 from "../assets/demo/action_details3.png";
+import actionDetails5 from "../assets/demo/action_details5.png";
 import nicolasBalzamo from "../assets/testimonials/nicolas-balzamo.jpeg";
 import russellHoward from "../assets/testimonials/russell-howard.jpeg";
 import yunhan from "../assets/testimonials/yunhan.JPG";
@@ -9,7 +8,7 @@ import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 function StarRow() {
   return (
-    <div className="flex items-center gap-1 text-yellow-400" aria-hidden>
+    <div className="flex items-center gap-1 text-[#F48D05]" aria-hidden>
       {Array.from({ length: 5 }).map((_, i) => (
         <span key={i}>★</span>
       ))}
@@ -19,16 +18,16 @@ function StarRow() {
 
 function TestimonialCard({ avatar, name, text }) {
   return (
-    <div className="group bg-[#1F2846] rounded-[10px] w-[286px] min-h-[340px] px-5 py-[30px] border border-white/10 shadow-[0_8px_24px_rgba(0,0,0,0.18)] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.28)]">
+    <div className="group bg-white rounded-[10px] w-[286px] min-h-[340px] px-5 py-[30px] border border-[#E3E3E3] shadow-[0_8px_24px_rgba(0,0,0,0.10)] transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(0,0,0,0.16)]">
       <div className="flex flex-col items-center text-center gap-4">
         {/* Avatar with colored circle background */}
         <div className="relative w-[110px] h-[110px] overflow-hidden rounded-[70px]">
-          <div className="absolute inset-0 rounded-full bg-[#726BF9]" />
+          <div className="absolute inset-0 rounded-full bg-[#7BBDC9]" />
           <img src={avatar} alt="" className="absolute inset-0 w-[110px] h-[110px] object-cover" />
         </div>
         <StarRow />
-        <h4 className="text-white font-medium text-[20px] tracking-[0.2px]">{name}</h4>
-        <p className="text-white/70 text-[16px] leading-6 tracking-[0.16px]">
+        <h4 className="text-[#064942] font-medium text-[20px] tracking-[0.2px]">{name}</h4>
+        <p className="text-[#7F9F76] text-[16px] leading-6 tracking-[0.16px]">
           {text}
         </p>
       </div>
@@ -62,7 +61,7 @@ function TestimonialsSection() {
   ];
 
   return (
-        <section id="testimonials" className="relative bg-white text-[#151A36] py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
+        <section id="testimonials" className="relative bg-white text-[#064942] py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
       <div className="relative mx-auto max-w-6xl px-6 sm:px-8 lg:px-12">
         <h2 
           ref={headerRef}
@@ -84,12 +83,11 @@ function TestimonialsSection() {
           ))}
         </div>
 
-        {/* Decorative details (reuse sizes from Why section) */}
-        <img src={detTopLeft} alt="" className="hidden lg:block absolute top-[35%] left-[5%] w-[15px] xl:w-[19px] h-auto animate-float z-30" />
-        <img src={detTopRight} alt="" className="hidden lg:block absolute top-[10%] right-[3%] w-[25px] xl:w-[30px] h-auto animate-float z-30" />
-        <img src={detBottomLeft} alt="" className="hidden lg:block absolute bottom-[-10%] left-[20%] w-[25px] xl:w-[30px] h-auto animate-float z-30" />
-        <img src={detDots} alt="" className="hidden lg:block absolute top-[15%] right-[8%] w-[35px] xl:w-[40px] h-auto animate-float z-30" />
-        <img src={detDots} alt="" className="hidden lg:block absolute bottom-[-8%] left-[6%] w-[35px] xl:w-[40px] h-auto animate-float z-30" />
+        {/* Decorative details around the center cards */}
+        <img src={actionDetails1} alt="" className="hidden lg:block absolute top-[6%] left-[2%] w-[30px] xl:w-[36px] h-auto animate-float z-30" />
+        <img src={actionDetails3} alt="" className="hidden lg:block absolute bottom-[2%] right-[2%] w-[14px] xl:w-[18px] h-auto animate-float z-30" style={{ animationDelay: "0.6s" }} />
+        <img src={actionDetails5} alt="" className="hidden lg:block absolute top-[8%] right-[1%] w-[24px] xl:w-[30px] h-auto animate-float z-30" style={{ animationDelay: "1s" }} />
+        <img src={actionDetails1} alt="" className="hidden lg:block absolute bottom-[1%] left-[4%] w-[22px] xl:w-[28px] h-auto animate-float z-30" style={{ animationDelay: "1.3s" }} />
       </div>
     </section>
   );
