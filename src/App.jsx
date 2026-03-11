@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <main className="relative bg-[#151A36] text-white min-h-screen font-[Outfit] scroll-smooth overflow-x-hidden">
+    <main className="relative bg-white text-[#151A36] min-h-screen font-[Outfit] scroll-smooth overflow-x-hidden">
       <Header />
       <HeroSection />
       <DemoSection />

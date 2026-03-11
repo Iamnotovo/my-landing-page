@@ -2,7 +2,7 @@ import aceDiplomaLogo from '../assets/header/ace-diploma-logo.svg';
 
 function Header() {
   return (
-        <header className="fixed inset-x-0 top-0 h-[70px] bg-[#151A36] z-50 backdrop-blur-sm bg-opacity-95">
+        <header className="fixed inset-x-0 top-0 h-[70px] bg-[#E5ECE4] z-50 backdrop-blur-sm bg-opacity-95">
       <div className="relative mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-12">
         {/* Logo - Bigger on small screens */}
         <div className="absolute left-4 sm:left-6 lg:left-12 top-[12px] sm:top-[15px]">
@@ -10,12 +10,12 @@ function Header() {
         </div>
 
             {/* Nav links - Hidden on very small screens */}
-            <nav className="hidden sm:inline-flex absolute left-1/2 top-[19px] sm:top-[25px] -translate-x-1/2 items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 text-white">
-              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}>Home</a>
-              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('why')?.scrollIntoView({ behavior: 'smooth' })}>Features</a>
-              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}>Demo</a>
-              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}>Testimonials</a>
-              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-gray-300 transition-colors cursor-pointer" onClick={() => document.getElementById('coming-soon')?.scrollIntoView({ behavior: 'smooth' })}>Pricing</a>
+            <nav className="hidden sm:inline-flex absolute left-1/2 top-[19px] sm:top-[25px] -translate-x-1/2 items-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 text-[#151A36]">
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-[#3d4767] transition-colors cursor-pointer" onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}>Home</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-[#3d4767] transition-colors cursor-pointer" onClick={() => document.getElementById('why')?.scrollIntoView({ behavior: 'smooth' })}>Features</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-[#3d4767] transition-colors cursor-pointer" onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}>Demo</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-[#3d4767] transition-colors cursor-pointer" onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}>Testimonials</a>
+              <a className="text-[11px] sm:text-xs md:text-sm lg:text-base font-medium leading-[22.4px] font-[Outfit] hover:text-[#3d4767] transition-colors cursor-pointer" onClick={() => document.getElementById('coming-soon')?.scrollIntoView({ behavior: 'smooth' })}>Pricing</a>
             </nav>
 
         {/* CTA Button - Bigger on small screens */}

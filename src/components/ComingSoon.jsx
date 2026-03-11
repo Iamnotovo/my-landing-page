@@ -50,7 +50,7 @@ export default function ComingSoon() {
   ];
 
   return (
-        <section id="coming-soon" className="relative bg-[#151A36] text-white py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
+        <section id="coming-soon" className="relative bg-white text-[#151A36] py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
       <div className="relative z-10 mx-auto max-w-6xl px-6 sm:px-8 lg:px-12">
         <div 
           ref={headerRef}
@@ -59,7 +59,7 @@ export default function ComingSoon() {
           }`}
         >
           <h2 className="text-center font-semibold text-[32px] sm:text-[40px] lg:text-[48px] leading-[1.2] mb-4">Coming Soon</h2>
-          <p className="text-center text-white/80 max-w-2xl mx-auto mb-10">This is just the beginning. We're constantly improving – and here's what's next.</p>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">This is just the beginning. We're constantly improving – and here's what's next.</p>
         </div>
 
         <div 

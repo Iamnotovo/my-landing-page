@@ -3,9 +3,9 @@ import books from "../assets/hero/books_icon.png";
 import notebook from "../assets/hero/notebook_icon.png";
 import pen from "../assets/hero/pen_icon.png";
 import ruler from "../assets/hero/ruler_icon.png";
-import rainbow from "../assets/hero/right_rainbow.png";
-import circle from "../assets/hero/violet_circle.png";
-import leftRainbow from "../assets/hero/left_rainbow.png";
+import rainbow from "../assets/hero/right_rainbow.svg";
+import circle from "../assets/hero/violet_circle.svg";
+import leftRainbow from "../assets/hero/left_rainbow.svg";
 import goToLogo from "../assets/shared/go_to_logo.png";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 import { useEffect, useState } from "react";
@@ -44,7 +44,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen bg-[#151A36] text-white overflow-hidden">
+    <section id="hero" className="relative min-h-screen bg-white text-[#151A36] overflow-hidden">
       {/* Mobile/Tablet Layout */}
       <div className="xl:hidden relative flex flex-col items-center justify-center min-h-screen px-6 py-20 overflow-hidden">
         {/* Floating Icons - Responsive sizing */}
@@ -193,7 +193,7 @@ function HeroSection() {
         <img 
           src={rainbow} 
           alt="rainbow" 
-          className={`hidden xl:block absolute top-[320px] left-[1085px] 2xl:left-[1450px] w-[508px] 2xl:w-[700px] h-[218px] z-10 transition-all duration-1000 ${
+          className={`hidden xl:block absolute top-[320px] left-[980px] 2xl:left-[1330px] w-[508px] 2xl:w-[700px] h-[218px] z-10 transition-all duration-1000 ${
             rainbowsVisible ? 'animate-slideInRight animate-pulseSoft' : 'opacity-0 translate-x-full'
           }`} 
         />

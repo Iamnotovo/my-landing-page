@@ -1,8 +1,10 @@
-// FinalCTA.tsx — uses LEFT rainbow on both sides, original size, centered on the card
+// FinalCTA.tsx — uses hero rainbows and circle, centered on the card
 
 import goToLogo from "../assets/shared/go_to_logo.png";
 import startPhoto from "../assets/final-cta/start_photo.png";
-import startLeftRainbow from "../assets/final-cta/start_left_rainbow.png"; // same asset for both sides
+import leftRainbow from "../assets/hero/left_rainbow.svg";
+import rightRainbow from "../assets/hero/right_rainbow.svg";
+import violetCircle from "../assets/hero/violet_circle.svg";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 function FinalCTA() {
@@ -11,27 +13,27 @@ function FinalCTA() {
   const [photoRef, photoVisible] = useScrollAnimation();
 
   return (
-    <section className="relative bg-[#151A36] text-white py-4 lg:py-8 xl:py-12 2xl:py-16 overflow-hidden min-h-screen flex items-center">
+    <section className="relative bg-white text-[#151A36] py-4 lg:py-8 xl:py-12 2xl:py-16 overflow-hidden min-h-screen flex items-center">
       {/* Left Rainbow */}
       <img
-        src={startLeftRainbow}
+        src={leftRainbow}
         alt=""
         className="pointer-events-none select-none hidden lg:block absolute
                    top-1/2 -translate-y-1/2
                    z-0 max-w-none"
-        style={{ left: 'calc(50% - 582.5px - 200px)' }}
+        style={{ left: '0' }}
       />
-      {/* Right Rainbow (mirrored left) */}
+      {/* Right Rainbow */}
       <img
-        src={startLeftRainbow}
+        src={rightRainbow}
         alt=""
         className="pointer-events-none select-none hidden lg:block absolute
                    top-1/2 -translate-y-1/2
-                   z-0 max-w-none transform-gpu scale-x-[-1]"
-        style={{ right: 'calc(50% - 582.5px - 200px)' }}
+                   z-0 max-w-none"
+        style={{ right: '0' }}
       />
 
-      <div className="relative mx-auto max-w-5xl 2xl:max-w-7xl px-6 sm:px-8 lg:px-12">
+      <div className="relative mx-auto max-w-6xl 2xl:max-w-[110rem] px-6 sm:px-8 lg:px-12">
         {/* Card */}
         <div
           ref={contentRef}
@@ -65,11 +67,13 @@ function FinalCTA() {
           <div className="relative z-10 w-[320px] h-[320px] xl:w-[400px] xl:h-[400px] 2xl:w-[480px] 2xl:h-[480px] flex-shrink-0">
             <div 
               ref={ellipseRef}
-              className={`absolute inset-0 bg-gradient-to-b from-[#8980F5] to-[#4133EF] rounded-full transition-all duration-1000 ${
+              className={`absolute inset-0 transition-all duration-1000 ${
                 ellipseVisible ? 'animate-pulse' : 'opacity-0 scale-90'
               }`}
               style={{animationDelay: '0.3s', animationDuration: '6s'}}
-            />
+            >
+              <img src={violetCircle} alt="" className="w-full h-full object-contain" />
+            </div>
             <div className="absolute inset-0 flex items-center justify-center z-10">
               <img
                 ref={photoRef}

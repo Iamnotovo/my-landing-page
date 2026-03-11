@@ -13,7 +13,7 @@ function WhySection() {
   const [cardsRef, cardsVisible] = useScrollAnimation();
 
   return (
-        <section id="why" className="relative bg-[#151A36] text-white py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
+        <section id="why" className="relative bg-white text-[#151A36] py-4 lg:py-8 overflow-hidden min-h-screen flex items-center">
       {/* Container */}
       <div className="relative mx-auto max-w-[68rem] px-6 sm:px-8 lg:px-12">
         

@@ -21,7 +21,7 @@ function DemoSection() {
   }, [photoVisible]);
 
   return (
-        <section id="demo" className="relative bg-[#151A36] text-white pt-8 lg:pt-12 pb-16 lg:pb-20 overflow-hidden min-h-screen flex items-start">
+        <section id="demo" className="relative bg-white text-[#151A36] pt-8 lg:pt-12 pb-16 lg:pb-20 overflow-hidden min-h-screen flex items-start">
       
       {/* Left Clocks - Touch screen edge */}
       <img 
@@ -58,7 +58,7 @@ function DemoSection() {
           <h2 className="font-semibold text-[32px] sm:text-[40px] lg:text-[48px] leading-[1.2] mb-4">
             See Ace Diploma in action
           </h2>
-          <p className="text-gray-300 text-lg sm:text-xl max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg sm:text-xl max-w-2xl mx-auto">
             Answer questions, get instant AI feedback, track progress
           </p>
         </div>
